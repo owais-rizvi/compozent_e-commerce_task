@@ -1,6 +1,6 @@
 import "./navbar.css";
 import { NavLink } from "react-router";
-
+import {SearchIcon, ShoppingBagIcon} from 'lucide-react';
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -31,8 +31,16 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="navbar-logo">Logo</div>
-      <div className="navbar-user-info">user info</div>
+      <div className="navbar-logo">TULOS</div>
+      <div className="navbar-user-info">
+        <div className="search-icon nav-button">
+          <SearchIcon/>
+        </div>
+        <div className="bag-icon nav-button">
+          <ShoppingBagIcon/>
+        </div>
+        <div className="nav-button">Login</div>
+      </div>
     </div>
   );
 };

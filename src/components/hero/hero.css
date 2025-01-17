@@ -21,9 +21,23 @@
   left: 20px;
   font-size: 100px;
 }
-
+.hero-main {
+  font-size: 60px;
+}
 .hero-sub {
-  font-size: 30px;
+  max-width: 85%;
+  font-size: 20px;
   font-weight: 300;
-  margin-top: -30px;
+  margin-top: -20px;
+}
+.buy-button {
+  background-color: white;
+  border: none;
+  padding: 0.6rem 2.2rem;
+  border-radius: 1rem;
+  margin-top: 35rem;
+  margin-left: 82rem;
+}
+.buy-button:hover {
+  cursor: pointer;
 }

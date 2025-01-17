@@ -1,11 +1,11 @@
-import { NavLink } from "react-router";
-import "./collection-cards.css";
-
-const Cards = ({ id, image, title, sub_title, price }) => {
+// import {Cards} from '../new-collection/collection-cards/collection-cards'
+import { useLocation } from "react-router";
+import "./items.css";
+const Items = () => {
+  const location = useLocation();
+  const { id, image, title, sub_title, price } = location.state || {};
   return (
-    <NavLink to={`/items/${id}`}
-      state={{id, image, title,sub_title,price}}
-    >
+    <div className="container">
       <div className="card">
         <div
           className="card-image"
@@ -20,8 +20,8 @@ const Cards = ({ id, image, title, sub_title, price }) => {
         <div className="card-sub">{sub_title}</div>
         <div className="card-price">${price}</div>
       </div>
-    </NavLink>
+    </div>
   );
 };
 
-export default Cards;
+export default Items;
