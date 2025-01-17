@@ -4,14 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router";
-import Items from "./components/items/items";
+import Items from "./components/accessories/accessories";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/items/:id" element={<Items/>} />
+      <Route path="/accessories/:id" element={<Items />} />
     </Routes>
   </BrowserRouter>
 );

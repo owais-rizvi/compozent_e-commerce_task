@@ -3,8 +3,12 @@ import "./collection-cards.css";
 
 const Cards = ({ id, image, title, sub_title, price }) => {
   return (
-    <NavLink to={`/items/${id}`}
+    <NavLink to={`/accessories/${id}`}
       state={{id, image, title,sub_title,price}}
+      style={{
+        textDecoration: "none",
+        color: "black",
+      }}
     >
       <div className="card">
         <div

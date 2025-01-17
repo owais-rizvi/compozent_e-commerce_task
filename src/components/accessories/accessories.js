@@ -1,6 +1,6 @@
 // import {Cards} from '../new-collection/collection-cards/collection-cards'
 import { useLocation } from "react-router";
-import "./items.css";
+import "./accessories.css";
 const Items = () => {
   const location = useLocation();
   const { id, image, title, sub_title, price } = location.state || {};
